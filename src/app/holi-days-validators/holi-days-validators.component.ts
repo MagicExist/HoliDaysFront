@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './holi-days-validators.component.css'
 })
 export class HoliDaysValidatorsComponent {
-
+  
 }
