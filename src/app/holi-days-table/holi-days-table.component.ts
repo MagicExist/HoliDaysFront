@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HoliDaysHttpHandlerService } from '../Services/holi-days-http-handler.service';
+import { HoliDayClass } from '../models/holi-day-class';
 
 @Component({
   selector: 'app-holi-days-table',
@@ -8,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrl: './holi-days-table.component.css'
 })
 export class HoliDaysTableComponent {
-
+  constructor(public HoliDayHttpClientService:HoliDaysHttpHandlerService){}
 }
