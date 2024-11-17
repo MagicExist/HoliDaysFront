@@ -12,14 +12,14 @@ export class HoliDaysHttpHandlerService {
 
   constructor(private Client:HttpClient) { }
 
-  public ValidateHoliDay(date:string):Observable<any>{
-    const url = "https://localhost:7235/Api/IsHoliday/"+date
+  public ValidateHoliDay(date:string[]):Observable<any>{
+    const url = "https://localhost:7235/Api/festivos/verificar/"+date[0] + "/" + date[1] + "/" + date[2]
     console.log(url)
     return this.Client.get<any>(url)
   }
 
   public GetHoliDaysByYear(year:string):Observable<any>{
-    const url = "https://localhost:7235/Api/GetHolidayAsync/"+year
+    const url = "https://localhost:7235/Api/festivos/obtener/"+year
     return this.Client.get<any>(url)
   }
 

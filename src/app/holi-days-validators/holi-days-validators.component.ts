@@ -19,7 +19,8 @@ export class HoliDaysValidatorsComponent {
 
   public ValidateHoliDay(){
     const selectedDate = this.validateDateInput.nativeElement.value;
-    this.HoliDayHttpClientService.ValidateHoliDay(selectedDate).subscribe({
+    let dateArray = selectedDate.split("-")
+    this.HoliDayHttpClientService.ValidateHoliDay(dateArray).subscribe({
       next: (response) => {
         alert(response.message)
       },
