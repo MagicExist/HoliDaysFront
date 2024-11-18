@@ -24,5 +24,4 @@ export class HoliDaysHttpHandlerService {
     return this.Client.get<any>(url)
   }
 
-  //variable de ambiente y
 }
