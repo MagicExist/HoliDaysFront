@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HoliDayClass } from '../models/holi-day-class';
-import { environment } from '../../environments/environment';
+import { HoliDayClass } from '../../core/holi-day-class';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'

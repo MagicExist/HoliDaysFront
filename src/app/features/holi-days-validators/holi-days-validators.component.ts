@@ -1,7 +1,7 @@
 import { Component,ViewChild,ElementRef } from '@angular/core';
 import { HoliDaysHttpHandlerService } from '../Services/holi-days-http-handler.service';
-import { HoliDayClass } from '../models/holi-day-class';
 import { TemplateBindingParseResult } from '@angular/compiler';
+import { HoliDayClass } from '../../core/holi-day-class';
 
 @Component({
   selector: 'app-holi-days-validators',

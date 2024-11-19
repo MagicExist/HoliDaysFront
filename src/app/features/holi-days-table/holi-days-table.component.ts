@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HoliDaysHttpHandlerService } from '../Services/holi-days-http-handler.service';
-import { HoliDayClass } from '../models/holi-day-class';
+import { HoliDayClass } from '../../core/holi-day-class';
 
 @Component({
   selector: 'app-holi-days-table',
