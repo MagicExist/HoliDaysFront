@@ -1,4 +1,4 @@
 export const environment={
     production:false,
-    apiBase:'Coloca aquí tu servidor'
+    apiBase:'https://localhost:7235/Api'
 }

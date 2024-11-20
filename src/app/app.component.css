@@ -1,0 +1,10 @@
+.img-surfer{
+    position: absolute;
+    top:0%;
+    left: 0;
+    width: 10rem;
+}
+
+.main-container{
+    position: relative;
+}

@@ -1,18 +1,21 @@
 <div class="container-fluid w-100 justify-content-center" data-bs-theme="dark">
-    <table class="table">
+    <table class="table table-bordered table-striped table-hover rounded-3">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">HoliDay</th>
-            <th scope="col">Date</th>
+            <th scope="col" class="fw-bold fst-italic">#</th>
+            <th scope="col" class="fw-bold fst-italic">HoliDay</th>
+            <th scope="col" class="fw-bold fst-italic">Date</th>
           </tr>
         </thead>
+
+
+
         <tbody>
           @for (holiday of HoliDayHttpClientService.HoliDaysByYearList; track $index) {
             <tr>
-              <th scope="row">${{$index}}</th>
+              <th scope="row" class="bg-success">${{$index}}</th>
               <td>{{holiday.Name}}</td>
-              <td>{{holiday.Day}}-{{holiday.Month}}-{{holiday.Year}}</td>
+              <td>{{holiday.Month}}-{{holiday.Day}}-{{holiday.Year}}</td>
             </tr>
           }
         </tbody>

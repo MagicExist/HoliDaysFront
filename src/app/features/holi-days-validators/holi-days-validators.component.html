@@ -1,17 +1,40 @@
-<div class="row w-100">
-    <div class="col col-12 col-md-6 mb-2 mb-md-0">
-        <div class="d-flex">
-            <input type="number" class="form-control me-2" min="1900" inputmode="numeric" #yearInput>
-            <button (click)="GetHoliDaysByYear()" class="btn btn-primary w-50" type="button">Get Holidays</button>
-        </div>
+<div class="row w-100 justify-content-center">
+    <div class="col-12 col-md-6 mb-3 mb-md-0">
+      <div class="d-flex align-items-center justify-content-between">
+        <input 
+          type="number" 
+          class="form-control rounded-pill p-3 shadow-sm" 
+          min="1900" 
+          inputmode="numeric" 
+          #yearInput 
+          placeholder="Enter year"
+        >
+        <button 
+          (click)="GetHoliDaysByYear()" 
+          class="btn btn-success w-100 w-md-50 rounded-pill p-3 ms-2" 
+          type="button"
+        >
+          Get Holidays
+        </button>
+      </div>
     </div>
-    <div class="col col-12 col-md-6">
-        <div class="d-flex">
-            <input type="date" class="form-control me-2" id="datepicker" #validateDateInput>
-            <button (click)="ValidateHoliDay()" class="btn btn-primary w-50" type="button">Validate Date</button>
-        </div>
+  
+    <div class="col-12 col-md-6">
+      <div class="d-flex align-items-center justify-content-between">
+        <input 
+          type="date" 
+          class="form-control rounded-pill p-3 shadow-sm" 
+          id="datepicker" 
+          #validateDateInput
+        >
+        <button 
+          (click)="ValidateHoliDay()" 
+          class="btn btn-info w-100 w-md-50 rounded-pill p-3 ms-2 text-white" 
+          type="button"
+        >
+          Validate Date
+        </button>
+      </div>
     </div>
-</div>
-
-
-
+  </div>
+  
